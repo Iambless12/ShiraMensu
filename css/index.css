@@ -1,0 +1,151 @@
+nav{
+    height: 10vh;
+    width: 100%;
+    position: fixed !important;
+    top: 0;
+    background-color: black;
+    padding: 0 1em;
+    display: flex;
+    z-index: 20;
+
+
+}
+.logo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red!important;
+    font-size: 2em;
+    font-weight: 500;
+    text-decoration: none;
+
+
+}
+.links {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+ 
+
+ }
+
+ .links a{
+    color:white ;
+    text-decoration: none;
+    font-weight: 800;
+    transition: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    color: white !important;
+    transition: none;
+ 
+ }
+ .links:hover,
+.links:focus,
+.links:active,
+.links:visited {
+  color: #ffffff!important; 
+}
+ 
+.navbar-nav{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    width: 100%;
+    }
+
+
+ body{
+    font-family:"roboto condensed";
+
+ }
+ 
+ .carousel-inner img{ 
+    height: 50vh;
+    object-fit: cover;
+    
+
+ }
+ #about{
+  background-color: #020104;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ff0000' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    color: white;
+    text-align: center;
+    height: 50vh;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    height: 100vh;
+
+ }
+
+ .about-top, .about-bottom{
+  height: 50%;
+  width: 100%;
+
+ }
+
+ .about-bottom{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1 fr 1fr;
+  
+ }
+
+
+ #location{
+   background-color: #FFB81C;
+      height: 100vh;
+   display: flex;
+   width: 100%;
+
+ }
+
+ .location-left, .location-right{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 50%; 
+   flex-direction:column ;
+ }
+
+ .location-left{
+   background-image: url("../images/japanscenery.avif");
+   background-size: cover;
+   background-position:center ;
+
+ }
+
+ .location-right{
+   color:black;
+  
+ }
+
+ .location-right h1{
+   width: 500px;
+   margin-bottom: 1rem;
+
+  }
+
+  .location-right p{
+      font-weight: 600;
+
+  }
+
+  .location-right iframe{
+      border: 4px black solid !important;
+      
+
+  }
+  .about-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
