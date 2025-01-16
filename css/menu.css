@@ -105,6 +105,32 @@ nav{
     background-color: red;
     color: white;
   } 
+  @media (max-width: 767.98px) { 
+    section div {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+
+    nav .logo{
+      font-size: larger!important;
+    }
+    .navbar-collapse{    
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      margin-top: 10vh;
+      width: 100%;
+    }
+    
+    .navbar-nav{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 90vh;
+      align-items: center;
+      background-color: black;
+    }
+   }
 
 
   

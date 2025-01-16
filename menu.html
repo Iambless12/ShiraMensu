@@ -34,7 +34,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="logo" href="./index.html"><i class="fa-solid fa-bowl-rice"></i>&nbsp; Shira Mensu </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -43,16 +43,14 @@
           </button>
           <div class="collapse navbar-collapse links" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a href="./index.html#header">Home</a>
-              <a href="./index.html#about">About</a>
-              <a href="./index.html#location">Location</a>
-              <a href="./menu.html">Menu</a>
-    
+              <a href="./index.html#header" class="nav-link">Home</a>
+              <a href="./index.html#about" class="nav-link">About</a>
+              <a href="./index.html#location" class="nav-link">Location</a>
+              <a href="./menu.html" class="nav-link">Menu</a>
             </div>
           </div>
         </div>
       </nav>
-
   <section>
     <h1>
         Food
@@ -188,6 +186,15 @@
 
 
   </section>
+  <script>
+    document.querySelectorAll('.navbar-nav a').forEach(link => {
+      link.addEventListener('click', function () {
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+        bsCollapse.hide();
+      });
+    });
+  </script>
 
 </body>
 
